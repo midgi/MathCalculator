@@ -3,16 +3,16 @@
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>MathCalculator</name>
-    <js-module name="MathCalculator" src="www/MathCalculator.js">
-        <clobbers target="MathCalculator" />
+    <js-module name="mathcalculator" src="www/mathcalculator.js">
+        <clobbers target="window.MathCalculator" />
     </js-module>
     <platform name="android">
+        <source-file src="src/android/MathCalculator.java" target-dir="src/cordova/plugin/mathcalculator" />
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="MathCalculator">
                 <param name="android-package" value="cordova.plugin.mathcalculator.MathCalculator" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
-        <source-file src="src/android/MathCalculator.java" target-dir="src/cordova/plugin/mathcalculator/MathCalculator" />
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>        
     </platform>
 </plugin>

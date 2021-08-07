@@ -10,7 +10,9 @@
     "Calculator",
     "Ionic"
   ],
-  "author": "Jose Martinez",
+  "author": {
+    "name": "Jose Martinez"
+  },
   "license": "ISC",
   "repository": {
     "type": "git",
