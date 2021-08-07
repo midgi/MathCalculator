@@ -1,8 +1,7 @@
 {
-  "name": "MathCalculator",
+  "name": "cordova-plugin-mathcalculator",
   "version": "1.0.0",
   "description": "This is Math Calculator example using cordova plugin",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +15,11 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/midgi/cordova-plugin-mathcalculator.git"
+  },
+  "cordova": {
+    "id": "cordova-plugin-mathcalculator",
+    "platforms": [
+      "android"
+    ]
   }
 }
