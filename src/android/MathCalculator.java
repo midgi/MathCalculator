@@ -49,7 +49,7 @@ public class MathCalculator extends CordovaPlugin {
         }
     }
 
-    private void add(JSONArray args, CallbackContext callbackContext){
+    private void substract(JSONArray args, CallbackContext callbackContext){
         if(args!=null){
             try{
                 int p1 = Integer.parseInt(args.getJSONObject(0).getString("param1"));
