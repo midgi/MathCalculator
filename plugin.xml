@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>MathCalculator</name>
     <js-module name="mathcalculator" src="www/mathcalculator.js">
-        <clobbers target="window.MathCalculator" />
+        <clobbers target="window.plugins.mathcalculator" />
     </js-module>
     <platform name="android">
         <source-file src="src/android/MathCalculator.java" target-dir="src/cordova/plugin/mathcalculator" />
